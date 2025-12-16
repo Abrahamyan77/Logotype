@@ -1,0 +1,29 @@
+.header{
+
+}
+.header__logo-search-wrapper{
+    position: relative;
+}
+.header__logo-search{
+    border-bottom: 0.0625rem solid #E6E8EC;
+    
+
+}
+.header__logo-wrapper{
+    padding: 1.8125rem 0 1.5625rem 0;
+    text-align: center;
+}
+.header__logo{
+    width: 11.3125rem;
+    height: 1.6875rem;
+    
+}
+.header__menu{
+
+}
+.header__search-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
