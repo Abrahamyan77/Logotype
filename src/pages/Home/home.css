@@ -1,0 +1,13 @@
+.post {
+    padding-top: 3rem;
+    padding-bottom: 10.3125rem;
+}
+
+.post__container {
+    display: flex;
+    row-gap: 3rem;
+    column-gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
