@@ -9,7 +9,7 @@
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     transform: translateX(-100%);
-    transition: transform 0.3s ease, width 0.3s ease;
+    transition: transform 0.5s ease, width 0.3s ease;
     --menu-width: 90%;
 }
 
@@ -51,8 +51,3 @@
     border-bottom: 0.0625rem solid #eee;
 }
 
-@media (max-width: 36rem) {
-    .mobil-menu {
-        --menu-width: 100%;
-    }
-}
