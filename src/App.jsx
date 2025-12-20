@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 
 function App() {
   const [searchInput, setSearchInput] = useState('');
+   
   
   return (
     <div className="App">

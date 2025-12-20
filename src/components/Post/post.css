@@ -2,6 +2,7 @@
     width: 22.5rem;
     min-height: 28.6875rem;
     border: 0.0625rem solid #E0E0E0;
+    cursor: pointer;
 }
 
 .post__img {

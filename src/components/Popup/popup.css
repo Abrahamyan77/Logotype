@@ -1,0 +1,147 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup-post {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+ max-width: 62.5rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.popup-post__img {
+  width: 55%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.popup-post__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.popup-post__tags {
+  font-size: 0.875rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+.popup-post__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.25rem 0;
+}
+
+.popup-post__autor-date {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.popup-post__autor {
+  font-weight: 500;
+}
+
+.popup-post__date-views {
+  font-weight: 400;
+}
+
+.popup-post__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (max-width: 1024px) {
+  .popup-post {
+    max-width: 43.75rem;
+    padding: 1.25rem;
+  }
+
+  .popup-post__title {
+    font-size: 1.375rem;
+  }
+
+  .popup-post__text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup-post {
+    width: 95%;
+    max-height: 95vh;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .popup-post__title {
+    font-size: 1.25rem;
+  }
+
+  .popup-post__autor-date {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .popup-post__text {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-post {
+    width: 85%;
+    max-height: 85vh;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .popup-post__title {
+    font-size: 1.125rem;
+  }
+
+  .popup-post__tags {
+    font-size: 0.75rem;
+  }
+
+  .popup-post__text {
+    font-size: 0.9rem;
+  }
+}
