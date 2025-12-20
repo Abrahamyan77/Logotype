@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import './home.css';
 import Container from '../../components/Container/Container';
 import axios from 'axios';
 import Post from '../../components/Post/Post';
 
-const Home = () => {
+const Home = ({ searchInput }) => {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
@@ -19,17 +19,24 @@ const Home = () => {
   };
 
   useEffect(() => {
-
     fetchData();
   }, []);
 
+  const filteredData = useMemo(() => {
+    if (!searchInput) return data;
+    return data.filter(item =>
+      item.title.toLowerCase().includes(searchInput.toLowerCase()) ||
+      item.text.toLowerCase().includes(searchInput.toLowerCase()) ||
+      item.tags.toLowerCase().includes(searchInput.toLowerCase())
+    );
+  }, [data, searchInput]);
 
   return (
     <Container>
       <div className="post">
-        {data && (
+        {filteredData && (
           <div className="post__container">
-            {data.map((item, index) => (
+            {filteredData.map((item, index) => (
               <Post key={index} item={item} index={index} />
             ))}
           </div>

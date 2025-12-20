@@ -2,9 +2,14 @@ import './post.css';
 
 
 const Post = ({ item, index}) => {
+    
+    const hendleClick = (index) => {
+        console.log('Post clicked:', index);
+    };
+    
     return (
-        <div key={index} className="post__item">
-            <img src={item.img} alt={item.title} className='post__img' />
+        <div key={index} className="post__item" onClick={() => hendleClick(index)}>
+            <img src={item.img} srcSet={item.img_2x} alt={item.title} className='post__img' />
             <div className='post__info'>
                 <h4 className='post__tags'>{item.tags}</h4>
                 <h2 className='post__title'>{item.title}</h2>
