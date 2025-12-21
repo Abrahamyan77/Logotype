@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Logotype/static/css/main.0163f29e.css",
+    "main.js": "/Logotype/static/js/main.9797e1ec.js",
+    "static/media/Logo.svg": "/Logotype/static/media/Logo.1f7d6f7902153b6d6a401a6f1a2ea311.svg",
+    "index.html": "/Logotype/index.html",
+    "static/media/chevron-down.svg": "/Logotype/static/media/chevron-down.029e4f67053d1f6fe9d4.svg",
+    "main.0163f29e.css.map": "/Logotype/static/css/main.0163f29e.css.map",
+    "main.9797e1ec.js.map": "/Logotype/static/js/main.9797e1ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0163f29e.css",
+    "static/js/main.9797e1ec.js"
+  ]
+}
